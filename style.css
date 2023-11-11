@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+body {
+    background-color: #2B3844;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #141F29;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.result {
+    background-color: transparent;
+    border: none;
+    width: 445px;
+    height: 85px;
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    pointer-events: none;
+}
+
+.row-1 , .row-2 , .row-3 , .row-4 , .row-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.row-1 button , .row-2 button , .row-3 button , .row-4 button , .row-5 button {
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+    color: white;
+    background-color: transparent;
+    box-shadow: -5px -4px 15px #47698B;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.row-1 .operator , .row-2 .operator , .row-3 .operator , .row-4 .operator , .row-5 .operator {
+    color: #55a3f1;
+}
+
+.row-1 button:hover , .row-2 button:hover , .row-3 button:hover , .row-4 button:hover , .row-5 button:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Borel&family=Cormorant:wght@300&family=Foldit&family=Indie+Flower&family=Kanit:wght@300&family=Mooli&family=Open+Sans:wght@500&family=Poppins:wght@300;500&family=Prompt:wght@300;400&family=Roboto&family=Rubik&family=Space+Mono:ital,wght@0,700;1,700&family=Wix+Madefor+Text:wght@500&display=swap');
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" class="result">
+            </div>
+            <div class="row-1">
+                <button class="operator" onclick="result.value = ''">AC</button>
+                <button class="operator" onclick="result.value = result.value.toString().slice(0,-1)">DEL</button>
+                <button class="operator" onclick="result.value = eval(result.value /100)">%</button>
+                <button class="operator" onclick="result.value += '/'">/</button>
+            </div>
+            <div class="row-2">
+                <button onclick="result.value += '7'">7</button>
+                <button onclick="result.value += '8'">8</button>
+                <button onclick="result.value += '9'">9</button>
+                <button class="operator" onclick="result.value += '*'">*</button>
+            </div>
+            <div class="row-3">
+                <button onclick="result.value += '4'">4</button>
+                <button onclick="result.value += '5'">5</button>
+                <button onclick="result.value += '6'">6</button>
+                <button class="operator" onclick="result.value += '-'">-</button>
+            </div>
+            <div class="row-4">
+                <button onclick="result.value += '1'">1</button>
+                <button onclick="result.value += '2'">2</button>
+                <button onclick="result.value += '3'">3</button>
+                <button class="operator" onclick="result.value += '+'">+</button>
+            </div>
+            <div class="row-5">
+                <button onclick="result.value += '0'">0</button>
+                <button onclick="result.value += '00'">00</button>
+                <button onclick="result.value += '.'">.</button>
+                <button class="operator" onclick="result.value = eval(result.value)">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const result = document.querySelector(".result");
+    </script>
+</body>
+</html>
